@@ -94,6 +94,13 @@ a { text-decoration: none; }
 .exp-company { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--pink); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; }
 .exp-company a { color: var(--pink); }
 .exp-desc { font-size: 14px; line-height: 1.75; color: #555; max-width: 600px; }
+.exp-groups { display: flex; flex-direction: column; gap: 16px; margin-top: 4px; }
+.exp-group-title { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pink); margin-bottom: 4px; }
+.exp-group-text { font-size: 14px; line-height: 1.75; color: #555; max-width: 600px; }
+.exp-item.exp-compact { padding: 18px 0; }
+.exp-item.exp-compact .exp-role { font-size: 16px; margin-bottom: 2px; }
+.exp-item.exp-compact .exp-company { font-size: 10.5px; margin-bottom: 6px; }
+.exp-item.exp-compact .exp-desc { font-size: 12.5px; line-height: 1.5; }
 
 /* ── RESULTS ── */
 .results-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: #1A1A1A; }
@@ -171,6 +178,8 @@ a { text-decoration: none; }
   .exp-role { font-size: 16px !important; }
   .exp-company { font-size: 11px !important; margin-bottom: 6px !important; }
   .exp-desc { font-size: 11px !important; line-height: 1.45 !important; max-width: none !important; }
+  .exp-group-text { font-size: 11px !important; line-height: 1.45 !important; max-width: none !important; }
+  .exp-groups { gap: 10px !important; }
   .exp-year { font-size: 11px !important; }
   .exp-duration { font-size: 10px !important; }
   .label { margin-bottom: 24px !important; }
@@ -200,9 +209,9 @@ a { text-decoration: none; }
 <!-- HERO -->
 <div class="hero">
   <div class="hero-content">
-    <div class="hero-eyebrow">Менеджер по продукту и маркетингу · Москва</div>
+    <div class="hero-eyebrow">Product &amp; Marketing Manager · Москва</div>
     <div class="hero-name">Мария<br><span class="pink">Дружинец</span></div>
-    <p class="hero-tagline">От идеи до полки — провожу продукты через все этапы. Горю проектами, разбираюсь в деталях, иду к результату. Хочу туда, где это взаимно.</p>
+    <p class="hero-tagline">От идеи до полки — провожу продукты через все этапы. Горю проектами, разбираюсь в деталях, иду к результату. Ищу позицию Brand Manager, где смогу отвечать за бренд от продукта до продаж.</p>
     <div class="hero-contacts">
       <div class="hero-row">
         <div class="hero-platform">Телефон</div>
@@ -262,7 +271,7 @@ a { text-decoration: none; }
     </div>
     <div class="edu-card">
       <div class="edu-year">MBA</div>
-      <div class="edu-badge">Курс · Дополнительное образование</div>
+      <div class="edu-badge">Курс · 2023</div>
       <div class="edu-degree">Создание продукта</div>
       <div class="edu-place">Soho MBA · Михаил Уколов</div>
       <div class="edu-field">→ Продуктовое мышление, запуск, стратегия</div>
@@ -284,11 +293,32 @@ a { text-decoration: none; }
       <div>
         <div class="exp-role">Менеджер по продукту и маркетингу</div>
         <div class="exp-company">Бренды: <a href="https://sdelaybox.ru" target="_blank">Сделай Бокс</a>, Парфэ, Топ Бабл</div>
-        <p class="exp-desc">Параллельное управление 3 брендами. Лично пробую и тестирую рецептуры с шеф-кондитером. На каждый набор — ТЗ шеф-кондитеру (проработка, конечная технология) и дизайнерам (фотоконтент, этикетка, инструкция). Планирую волны производства по приоритету готовых комплектующих, резервирую товар в 1С под контракты. Координирую ПЭО, дизайнеров, отдел закупок и бухгалтерию (отчётность по маркетинговым расходам). Курирую студентов на практике: ставлю задачи, проверяю и оцениваю результаты. Оптимизация печати этикеток — сокращение срока производства с 3 недель до 1–1,5 недель. Маркетинг: 100+ блогеров, Яндекс.Директ (Мастер кампаний — веду сама), таргет ВК (совместный анализ метрик с менеджером), посевы. Рекламный бюджет 3,2+ млн руб в сезон. B2B: расчёт себестоимости, корпоративные предложения, контроль производства под контракты. Собираю отчёт рентабельности по сезону. Создание сайтов на Tilda. Использую Canva и AI-инструменты, включая Клод, для инфографики карточек товара и повышения производительности.</p>
+        <div class="exp-groups">
+          <div class="exp-group">
+            <div class="exp-group-title">Продукт и производство</div>
+            <p class="exp-group-text">Параллельное управление 3 брендами. Лично пробую и тестирую рецептуры с шеф-кондитером. На каждый набор — ТЗ шеф-кондитеру (проработка, конечная технология) и дизайнерам (фотоконтент, этикетка, инструкция). Планирую волны производства по приоритету готовых комплектующих, резервирую товар в 1С под контракты. Оптимизация печати этикеток — сокращение срока производства с 3 недель до 1–1,5 недель.</p>
+          </div>
+          <div class="exp-group">
+            <div class="exp-group-title">Маркетинг</div>
+            <p class="exp-group-text">100+ блогеров, Яндекс.Директ (Мастер кампаний — веду сама), таргет ВК (совместный анализ метрик с менеджером), посевы. Рекламный бюджет 3,2+ млн руб в сезон.</p>
+          </div>
+          <div class="exp-group">
+            <div class="exp-group-title">B2B и аналитика</div>
+            <p class="exp-group-text">Расчёт себестоимости, корпоративные предложения, контроль производства под контракты. Собираю отчёт рентабельности по сезону.</p>
+          </div>
+          <div class="exp-group">
+            <div class="exp-group-title">Координация и команда</div>
+            <p class="exp-group-text">Координирую ПЭО, дизайнеров, отдел закупок и бухгалтерию (отчётность по маркетинговым расходам). Курирую студентов на практике: ставлю задачи, проверяю и оцениваю результаты.</p>
+          </div>
+          <div class="exp-group">
+            <div class="exp-group-title">Инструменты</div>
+            <p class="exp-group-text">Создание сайтов на Tilda, включая кастомный код (вайб-кодинг с Клодом), встроенный в страницу сайта. Canva и AI-инструменты, включая Клод, — для инфографики карточек товара и повышения производительности.</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="exp-item">
+    <div class="exp-item exp-compact">
       <div class="exp-meta">
         <div class="exp-year">2023</div>
         <div class="exp-year">— 2024</div>
@@ -301,7 +331,7 @@ a { text-decoration: none; }
       </div>
     </div>
 
-    <div class="exp-item">
+    <div class="exp-item exp-compact">
       <div class="exp-meta">
         <div class="exp-year">2024</div>
         <div class="exp-duration">1 год</div>
@@ -335,40 +365,40 @@ a { text-decoration: none; }
     <div class="label label-dark">Результаты</div>
     <div class="big-title" style="color:white;">Измеримый вклад<br><span style="color:var(--pink);">в последний проект</span></div>
   </div>
+  <div style="padding:8px 64px 48px;display:flex;flex-wrap:wrap;gap:40px;border-top:1px solid #2A2A2A;">
+    <div style="padding-top:24px;max-width:260px;">
+      <div class="result-kpi"><span>35,5 млн ₽</span></div>
+      <div class="result-desc">Пиковая выручка за декабрь 2025 по брендам Сделай Бокс + Парфэ (WB + Ozon)</div>
+    </div>
+    <div style="padding-top:24px;max-width:260px;">
+      <div class="result-kpi"><span>60+ млн ₽</span></div>
+      <div class="result-desc">Выручка 3 брендов за неполный сезон — октябрь 2025 по май 2026</div>
+    </div>
+    <div style="padding-top:24px;max-width:260px;">
+      <div class="result-kpi"><span>3 нед → 1,5 нед</span></div>
+      <div class="result-desc">Оптимизация печати этикеток — сокращение срока производства в 2 раза, для всех брендов</div>
+    </div>
+  </div>
   <div class="results-wrap">
     <div class="results-col">
-      <div class="results-year">2025</div>
-      <div class="result-item">
-        <div class="result-kpi"><span>35,5 млн ₽</span></div>
-        <div class="result-desc">Пиковая выручка за декабрь 2025 по брендам Сделай Бокс + Парфэ (WB + Ozon)</div>
-      </div>
+      <div class="results-year" style="font-size:40px;">Сделай Бокс</div>
       <div class="result-item">
         <div class="result-kpi"><span>×3,6</span> рост продаж</div>
-        <div class="result-desc">После оптимизации рекламной кампании НГ-сезона при двукратном росте бюджета</div>
+        <div class="result-desc">После оптимизации рекламной кампании к Новому году 2026 при двукратном росте бюджета</div>
       </div>
       <div class="result-item">
         <div class="result-kpi"><span>−40%</span> CPO</div>
-        <div class="result-desc">Снижение стоимости заказа по итогам анализа 100 блогеров и перераспределения каналов</div>
+        <div class="result-desc">Снижение стоимости заказа по итогам рекламной кампании к Новому году 2026 — анализ 100 блогеров и перераспределение каналов</div>
       </div>
-
       <div class="result-item">
         <div class="result-kpi"><span>17</span> наборов</div>
         <div class="result-desc">Новые НГ-наборы Сделай Бокс с нуля: пряничные домики, кейк-попсы, замки, персонажи, безглютеновые форматы — от концепции и рецептуры до этикетки и полки</div>
       </div>
     </div>
     <div class="results-col" style="border-left:1px solid #2A2A2A;">
-      <div class="results-year">2026</div>
+      <div class="results-year" style="font-size:40px;">Парфэ</div>
       <div class="result-item">
-        <div class="result-kpi"><span>60+ млн ₽</span></div>
-        <div class="result-desc">Выручка 3 брендов за неполный сезон — октябрь 2025 по май 2026</div>
-      </div>
-
-      <div class="result-item">
-        <div class="result-kpi"><span>Топ Бабл</span> — новый бренд</div>
-        <div class="result-desc">Запущен с нуля в 2026: продуктовая линейка bubble tea, упаковка, этикетки, карточки товаров на WB и Ozon. Выручка в первый месяц — <strong style="color:var(--pink-light);">182 000 ₽</strong></div>
-      </div>
-      <div class="result-item">
-        <div class="result-kpi"><span>19</span> наборов Парфэ</div>
+        <div class="result-kpi"><span>19</span> наборов</div>
         <div class="result-desc">8 комплектов к НГ + 11 к Пасхе 2026 — расширение продуктовой матрицы бренда</div>
       </div>
       <div class="result-item">
@@ -385,10 +415,13 @@ a { text-decoration: none; }
           221 624 показа, 12 860 кликов по 1,45 руб — при рыночной норме 5–15 руб.
         </div>
       </div>
-      <div class="result-item">
-        <div class="result-kpi"><span>3 нед → 1,5 нед</span></div>
-        <div class="result-desc">Оптимизация печати этикеток — сокращение срока производства в 2 раза, для всех брендов</div>
-      </div>
+    </div>
+  </div>
+  <div style="padding:48px 64px;border-top:1px solid #2A2A2A;">
+    <div class="results-year" style="font-size:40px;">Топ Бабл</div>
+    <div class="result-item" style="max-width:600px;">
+      <div class="result-kpi"><span>Топ Бабл</span> — новый бренд</div>
+      <div class="result-desc">Запущен с нуля в 2026: продуктовая линейка bubble tea, упаковка, этикетки, карточки товаров на WB и Ozon. Выручка в первый месяц — <strong style="color:var(--pink-light);">182 000 ₽</strong></div>
     </div>
   </div>
 </section>

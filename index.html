@@ -172,10 +172,13 @@ a { text-decoration: none; }
   .ticker-wrap { display: none; }
   body { font-size: 12px; }
   .section { padding: 40px; }
-  .hero { min-height: auto !important; }
+  .hero { min-height: auto !important; page-break-inside: avoid; }
   .hero-content { padding: 40px !important; }
-  .hero-photo { max-height: 480px; }
+  .hero-photo { height: 340px !important; max-height: none; }
+  .hero-photo img { height: 100% !important; transform: none !important; object-position: center 55%; }
+  .hero-badge { bottom: 10px !important; right: 10px !important; padding: 8px 12px !important; font-size: 8px !important; }
   .hero-name { font-size: 64px !important; }
+  .section, .about-grid, .edu-grid, .skills-split, .contact { page-break-inside: avoid; }
   .results-wrap, .skills-split { grid-template-columns: 1fr 1fr; }
   .brands-grid { grid-template-columns: 1fr 1fr 1fr; }
   .exp-item { padding: 12px 0 !important; gap: 24px !important; }
@@ -238,7 +241,7 @@ a { text-decoration: none; }
 </div>
 
 <!-- ABOUT -->
-<section class="section">
+<section class="section" style="page-break-before: always;">
   <div class="label">О себе</div>
   <div class="about-grid">
     <div>
@@ -256,7 +259,7 @@ a { text-decoration: none; }
 </section>
 
 <!-- EDUCATION -->
-<section class="section section-off">
+<section class="section section-off" style="page-break-before: always;">
   <div class="label">Образование</div>
   <div class="edu-grid">
     <div class="edu-card">
@@ -509,7 +512,7 @@ a { text-decoration: none; }
 </section>
 
 <!-- CONTACT -->
-<div class="contact">
+<div class="contact" style="page-break-before: always;">
   <div class="contact-title">Давайте<br>работать<br>вместе</div>
   <div class="contact-links">
     <a class="contact-link" href="tel:+79781434003">

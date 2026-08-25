@@ -107,14 +107,8 @@ a { text-decoration: none; color: inherit; }
   position: relative;
 }
 .portrait-frame img {
-  width: 100%; height: 100%; object-fit: cover; object-position: top center;
+  width: 100%; height: 100%; object-fit: cover; object-position: center 20%;
   display: block;
-}
-/* Placeholder illustration — swap for Zhenya's photo: replace this <svg> with <img src="zhenya.jpg"> */
-.portrait-frame .placeholder-lady {
-  width: 62%;
-  height: auto;
-  opacity: 0.95;
 }
 .portrait-frame::after {
   content: '';
@@ -296,39 +290,9 @@ footer .script {
 
     <div class="portrait-wrap">
       <div class="portrait-frame">
-        <!-- Заглушка. Чтобы вставить фото Жени — замени <svg class="placeholder-lady">…</svg> на:
-             <img src="zhenya.jpg" alt="Женя"> -->
-        <svg class="placeholder-lady" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
-          <!-- Крошечная корона -->
-          <path d="M85 38 L88 24 L96 34 L100 20 L104 34 L112 24 L115 38 Z" fill="#B8935B"/>
-          <circle cx="100" cy="20" r="2.5" fill="#D4B27E"/>
-          <rect x="83" y="38" width="34" height="5" rx="1.5" fill="#B8935B"/>
-
-          <!-- Лавровые ветви -->
-          <g stroke="#8AA06B" stroke-width="2" fill="none" opacity="0.75">
-            <path d="M40 130 C55 110 62 90 60 60"/>
-            <path d="M46 122 C52 118 58 116 63 118"/>
-            <path d="M43 106 C50 102 56 101 61 103"/>
-            <path d="M42 90 C49 87 55 86 60 88"/>
-            <path d="M45 74 C51 71 57 70 61 73"/>
-          </g>
-          <g stroke="#8AA06B" stroke-width="2" fill="none" opacity="0.75">
-            <path d="M160 130 C145 110 138 90 140 60"/>
-            <path d="M154 122 C148 118 142 116 137 118"/>
-            <path d="M157 106 C150 102 144 101 139 103"/>
-            <path d="M158 90 C151 87 145 86 140 88"/>
-            <path d="M155 74 C149 71 143 70 139 73"/>
-          </g>
-
-          <!-- Монограмма -->
-          <text x="100" y="122" text-anchor="middle" font-family="'Great Vibes', cursive" font-size="88" fill="#DDA3AE">Ж</text>
-
-          <!-- Нижний вензель -->
-          <path d="M65 148 Q100 168 135 148" stroke="#B8935B" stroke-width="2" fill="none" opacity="0.85"/>
-          <circle cx="100" cy="163" r="2.5" fill="#B8935B"/>
-        </svg>
+        <img src="zhenya.jpg" alt="Женя">
       </div>
-      <div class="portrait-caption">здесь будет твой прекрасный портрет, дорогая Женя</div>
+      <div class="portrait-caption">Её Высочество Женя</div>
     </div>
 
     <h1 class="hero-title">Женечка</h1>

@@ -100,8 +100,18 @@ a { text-decoration: none; color: inherit; }
   padding: 60px 24px 20px;
   position: relative;
 }
-.masthead-icon { width: 108px; margin: 0 auto 26px; }
-.masthead-icon svg { width: 100%; height: auto; display: block; }
+.masthead-icon {
+  width: 108px;
+  height: 108px;
+  margin: 0 auto 26px;
+  border-radius: 50%;
+  border: 1.2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+.masthead-icon img { width: 84%; height: auto; display: block; }
 .masthead-title {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
@@ -510,7 +520,7 @@ footer .script {
   <div class="corner-sprig br"><svg><use href="#corner-bloom"/></svg></div>
 
   <section class="masthead">
-    <div class="masthead-icon"><svg viewBox="0 0 100 100"><use href="#lady-silhouette"/></svg></div>
+    <div class="masthead-icon"><img src="whistledown-silhouette.png" alt="Lady Whistledown"></div>
     <div class="masthead-title">Lady Whistledown</div>
     <div class="masthead-sub">Society Papers</div>
     <div class="masthead-rule"></div>
